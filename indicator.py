@@ -178,15 +178,15 @@ def hazard_function(input_data):
                 hazard_table.at[i,j]=round(k,2)
                 j=j+1
 
-    Hvalue0M=hazard_table[0].dropna().to_list()
-    Hvalue1M=hazard_table[1].dropna().to_list()
-    Hvalue2M=hazard_table[2].dropna().to_list()
+    # Hvalue0M=hazard_table[0].dropna().to_list()
+    # Hvalue1M=hazard_table[1].dropna().to_list()
+    # Hvalue2M=hazard_table[2].dropna().to_list()
 
-    Hlegend0M=idx2[0]
-    Hlegend1M=idx2[1]
-    Hlegend2M=idx2[2]
+    # Hlegend0M=idx2[0]
+    # Hlegend1M=idx2[1]
+    # Hlegend2M=idx2[2]
 
-    return Hvalue0M,Hvalue1M,Hvalue2M,Hlegend0M,Hlegend1M,Hlegend2M
+    return hazard_table
     
 
 def ppm_function(input_data):

@@ -228,18 +228,9 @@
                                 Hazard Graph
                             </div>
                             <div class="card-body">
-                                <canvas id="hazardgraph" width="100%" height="50">
+                                <canvas id="myTest" width="100%" height="50">
                                     <script>
-                                        var HjinjaLabels = '{{ Hlabels | tojson }}';
-                                    
-                                        var Hjinja2MValues = '{{ Hvalue2M | tojson }}';
-                                        var Hjinja2MLegend = '{{ Hlegend2M }}';
-                                    
-                                        var Hjinja1MValues = '{{ Hvalue1M | tojson }}';
-                                        var Hjinja1MLegend = '{{ Hlegend1M }}';
-                                    
-                                        var Hjinja0MValues = '{{ Hvalue0M | tojson }}';
-                                        var Hjinja0MLegend = '{{ Hlegend0M }}';
+                                        var hazard_json='{{ hazard_table|tojson }}'
                                     </script>
                                 </canvas>
                             </div>
